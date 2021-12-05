@@ -42,6 +42,7 @@ group 11 :: 공예나, 최진혁
 이때, 지뢰가 있는 곳으로 추정되는 곳은 조심해야하므로 깃발을 클릭해서 표시해줄 수 있습니다.
 
 
+
 *이등병
 
 <img width="640" alt="LV1_미션배경" src="https://user-images.githubusercontent.com/67888680/144751827-f8d129b0-8676-4e9e-ae5d-ff93036a0ef4.png">
@@ -67,5 +68,7 @@ group 11 :: 공예나, 최진혁
 
 <img width="640" alt="실패화면" src="https://user-images.githubusercontent.com/67888680/144752230-26b9c9dd-6348-48ea-9635-af6327ae6c52.png">
 
-###전우의 전역과 목숨의 당신의 손에 달려있다....!
+
+전우의 전역과 목숨의 당신의 손에 달려있다....!
+당신은....무사히...전역할 수 있습니까?
 
