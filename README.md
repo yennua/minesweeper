@@ -71,4 +71,6 @@ group 11 :: 공예나, 최진혁
 
 전우의 전역과 목숨의 당신의 손에 달려있다....!
 당신은....무사히...전역할 수 있습니까?
+지금 바로 PLAY.
 
+<img width="640" alt="시작화면" src="https://user-images.githubusercontent.com/67888680/144752462-f8423eb0-c8aa-4cf4-adda-aab7f697f179.png">
