@@ -60,12 +60,12 @@ group 11 :: 공예나, 최진혁
 
 과연 우리의 주인공은! 모든 지뢰를 찾아내고 안전하게 조기전역을 성공할 수 있을까요!
 
-![엔딩화면](https://user-images.githubusercontent.com/67888680/144752047-66316609-b593-44cc-a700-5a8dbe02173f.png)
+<img width="640" alt="엔딩화면" src="https://https://user-images.githubusercontent.com/67888680/144752298-86bca26a-10cb-4a81-bf8d-5178490eccc9.png">
 
 
 아니면 지뢰가 터져서 모두를 위험에 빠트리게 될까요!
 
 <img width="640" alt="실패화면" src="https://user-images.githubusercontent.com/67888680/144752230-26b9c9dd-6348-48ea-9635-af6327ae6c52.png">
 
-####전우의 전역과 목숨의 당신의 손에 달려있다....!
+###전우의 전역과 목숨의 당신의 손에 달려있다....!
 
