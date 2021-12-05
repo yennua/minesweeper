@@ -1,5 +1,5 @@
 # Minesweeper
-===========
+========
 
 2021 객체지향프로그래밍 그룹과제 _ 지뢰찾기 게임
 
@@ -12,6 +12,7 @@ group 11 :: 공예나, 최진혁
 본 게임은 C++와 방탈 라이브러리(https://cafe.naver.com/bangtal) 를 사용하여 만든 게임입니다.
 
 게임 소개 영상 :: https://www.youtube.com/watch?v=oap2HGRtyB4
+
 게임 플레이 영상 :: 
 
 ## 게임 소개
