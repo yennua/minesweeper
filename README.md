@@ -11,7 +11,11 @@ group 11 :: 공예나, 최진혁
 
 본 게임은 C++와 방탈 라이브러리(https://cafe.naver.com/bangtal) 를 사용하여 만든 게임입니다.
 
+게임에 대한 소개와 사용방법이 궁금하다면 Click!
+
 게임 소개 영상 :: https://www.youtube.com/watch?v=oap2HGRtyB4
+
+게임의 진행 과정을 보고 싶다면 Click!
 
 게임 플레이 영상 :: 
 
