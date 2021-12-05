@@ -1,4 +1,4 @@
-# Minesweeper
+# **Minesweeper**
 ------
 
 2021 객체지향프로그래밍 그룹과제 _ 지뢰찾기 게임
