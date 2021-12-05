@@ -53,19 +53,19 @@ group 11 :: 공예나, 최진혁
 
 
 
-*이등병
+**이등병**
 
 <img width="640" alt="LV1_미션배경" src="https://user-images.githubusercontent.com/67888680/144751827-f8d129b0-8676-4e9e-ae5d-ff93036a0ef4.png">
 
-*일병
+**일병**
 
 <img width="640" alt="LV2_미션배경" src="https://user-images.githubusercontent.com/67888680/144751850-d01994ba-6c8d-40bd-bfea-7744c5914026.png">
 
-*상병
+**상병**
 
 <img width="640" alt="LV3_미션배경" src="https://user-images.githubusercontent.com/67888680/144751858-41240856-dc4e-4211-af50-0bb9b949a420.png">
 
-*병장
+**병장**
 
 <img width="640" alt="LV4_미션배경" src="https://user-images.githubusercontent.com/67888680/144751868-520f4f66-3fd5-4be2-9d4c-cf19779b2b9a.png">
 
