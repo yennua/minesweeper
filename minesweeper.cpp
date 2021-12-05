@@ -69,7 +69,7 @@ int game_index4(ObjectPtr piece) { //피스에서 인덱스 추출
 int game_index5(ObjectPtr piece) { //피스에서 인덱스 추출
 	for (int i = 0; i < 16;i++) {
 		for (int j = 0; j < 16;j++) {
-			if (trap5[i][j] == piece) return i * 10 + j;
+			if (trap5[i][j] == piece) return i * 100 + j;
 		}
 	}
 	return -1; //INVALID PIECE
@@ -106,11 +106,11 @@ void show2(int row, int col, int row_size, int col_size) {
 	char path[20];
 	if (col < col_size && col >= 0 && row < row_size && row >= 0) {
 		if (click[row][col] == 0) {
-			cout << "row: " << row << "col: " << col << endl;
+			//cout << "row: " << row << "col: " << col << endl;
 			if (trap_hint[col][row] == 0) {
 				trap2[row][col]->setImage("Images/클릭.png");
 				click[row][col] = 1;
-				cout << 222 << endl;
+				//cout << 222 << endl;
 				for (int a = -1; a < 2; a++) { //주변 8칸 둘러보기 위한 for 문
 					for (int b = -1; b < 2; b++) {
 						if (a != 0 || b != 0)
@@ -119,7 +119,7 @@ void show2(int row, int col, int row_size, int col_size) {
 				}
 			}
 			else if (trap_hint[col][row] != -1) {
-				cout << 333 << endl;
+				//cout << 333 << endl;
 				sprintf(path, "Images/숫자_%d.png", trap_hint[col][row]);
 				trap2[row][col]->setImage(path);
 				click[row][col] = 1;
@@ -132,11 +132,10 @@ void show3(int row, int col, int row_size, int col_size) {
 	char path[20];
 	if (col < col_size && col >= 0 && row < row_size && row >= 0) {
 		if (click[row][col] == 0) {
-			cout << "row: " << row << "col: " << col << endl;
+			//cout << "row: " << row << "col: " << col << endl;
 			if (trap_hint[col][row] == 0) {
 				trap3[row][col]->setImage("Images/클릭.png");
 				click[row][col] = 1;
-				cout << 222 << endl;
 				for (int a = -1; a < 2; a++) { //주변 8칸 둘러보기 위한 for 문
 					for (int b = -1; b < 2; b++) {
 						if (a != 0 || b != 0)
@@ -145,7 +144,6 @@ void show3(int row, int col, int row_size, int col_size) {
 				}
 			}
 			else if (trap_hint[col][row] != -1) {
-				cout << 333 << endl;
 				sprintf(path, "Images/숫자_%d.png", trap_hint[col][row]);
 				trap3[row][col]->setImage(path);
 				click[row][col] = 1;
@@ -158,11 +156,10 @@ void show4(int row, int col, int row_size, int col_size) {
 	char path[20];
 	if (col < col_size && col >= 0 && row < row_size && row >= 0) {
 		if (click[row][col] == 0) {
-			cout << "row: " << row << "col: " << col << endl;
+			//cout << "row: " << row << "col: " << col << endl;
 			if (trap_hint[col][row] == 0) {
 				trap4[row][col]->setImage("Images/클릭.png");
 				click[row][col] = 1;
-				cout << 222 << endl;
 				for (int a = -1; a < 2; a++) { //주변 8칸 둘러보기 위한 for 문
 					for (int b = -1; b < 2; b++) {
 						if (a != 0 || b != 0)
@@ -171,7 +168,6 @@ void show4(int row, int col, int row_size, int col_size) {
 				}
 			}
 			else if (trap_hint[col][row] != -1) {
-				cout << 333 << endl;
 				sprintf(path, "Images/숫자_%d.png", trap_hint[col][row]);
 				trap4[row][col]->setImage(path);
 				click[row][col] = 1;
@@ -184,11 +180,10 @@ void show5(int row, int col, int row_size, int col_size) {
 	char path[20];
 	if (col < col_size && col >= 0 && row < row_size && row >= 0) {
 		if (click[row][col] == 0) {
-			cout << "row: " << row << "col: " << col << endl;
+			//cout << "row: " << row << "col: " << col << endl;
 			if (trap_hint[col][row] == 0) {
 				trap5[row][col]->setImage("Images/클릭.png");
 				click[row][col] = 1;
-				cout << 222 << endl;
 				for (int a = -1; a < 2; a++) { //주변 8칸 둘러보기 위한 for 문
 					for (int b = -1; b < 2; b++) {
 						if (a != 0 || b != 0)
@@ -197,7 +192,6 @@ void show5(int row, int col, int row_size, int col_size) {
 				}
 			}
 			else if (trap_hint[col][row] != -1) {
-				cout << 333 << endl;
 				sprintf(path, "Images/숫자_%d.png", trap_hint[col][row]);
 				trap5[row][col]->setImage(path);
 				click[row][col] = 1;
@@ -208,7 +202,7 @@ void show5(int row, int col, int row_size, int col_size) {
 
 //폭탄 랜덤 생성, 폭탄 힌트 생성
 void random(int row_size, int col_size, int trap, int trap_hint[][TRAPby]) {
-	int trap_place[TRAPby] = { 0, };
+	int trap_place[40] = { 0, };
 	int flag1;
 	int randint;
 
@@ -218,7 +212,7 @@ void random(int row_size, int col_size, int trap, int trap_hint[][TRAPby]) {
 		randint = rand() % (row_size * col_size);
 		for (int j = 0; j < i; j++) {
 			if (randint == trap_place[j]) {
-				cout << "i: " << i << " j: " << j << " randint " << j << endl;
+				//cout << "i: " << i << " j: " << j << " randint " << j << endl;
 				flag1 = 1;
 			}
 		}
@@ -234,14 +228,14 @@ void random(int row_size, int col_size, int trap, int trap_hint[][TRAPby]) {
 			randint = rand() % (row_size * col_size);
 			for (int j = 0; j < i + 1; j++) {
 				if (randint == trap_place[j]) {
-					cout << "i: " << i << " j: " << j << " randint " << randint << endl;
+					//cout << "i: " << i << " j: " << j << " randint " << randint << endl;
 					flag1 = 1;
 				}
 			}
 			if (flag1 == 0) break;
 		}
 		trap_place[i] = randint;
-		cout << " randint: " << randint << endl;
+		//cout << " randint: " << randint << endl;
 	}
 
 	int row, col;
@@ -267,16 +261,17 @@ void random(int row_size, int col_size, int trap, int trap_hint[][TRAPby]) {
 			}
 		}
 	}
-	int sum=0;
-	for (i = 0; i < col_size; i++) {
-		for (int j = 0; j < col_size; j++) {
-			cout << trap_hint[i][j] << ' ';
-			if (trap_hint[i][j] == -1)
-				sum++;
-		}
-		cout << endl;
-	}
-	cout << sum << endl;
+	//생성된 지뢰 확인용
+	//int sum=0;
+	//for (i = 0; i < col_size; i++) {
+	//	for (int j = 0; j < col_size; j++) {
+	//		cout << trap_hint[i][j] << ' ';
+	//		if (trap_hint[i][j] == -1)
+	//			sum++;
+	//	}
+	//	cout << endl;
+	//}
+	//cout << sum << endl;
 }
 
 //초기화
@@ -292,6 +287,8 @@ void init() {
 	state = 0; //0: 게임중, 1: 게임중x, -1: 게임 종료
 }
 
+SoundPtr intro, outro;
+
 int main() {
     setGameOption(GameOption::GAME_OPTION_INVENTORY_BUTTON, false);
     setGameOption(GameOption::GAME_OPTION_MESSAGE_BOX_BUTTON, false);
@@ -302,16 +299,27 @@ int main() {
 	char path[20];
 	int slidenum = 1; //스토리 슬라이드 순서
 
-	SoundPtr Classic = Sound::create("Sounds/Classic.mp3");
-	SoundPtr Intro = Sound::create("Sounds/Intro.mp3");
-	SoundPtr outro = Sound::create("Sounds/outro.mp3");
+	SoundPtr classic = Sound::create("Sounds/classic.mp3");
+	intro = Sound::create("Sounds/intro.mp3");
+	outro = Sound::create("Sounds/outro.mp3");
 	SoundPtr story = Sound::create("Sounds/story.mp3");
 
 	ScenePtr ending = Scene::create("엔딩", "Images/엔딩화면.png");
-	ScenePtr scene1 = Scene::create("메인화면", "Images/시작화면.png");
+	ending->setOnEnterCallback([&](ScenePtr scene)->bool {
+		story->stop();
+		classic->stop();
+		outro->play(true);
+		return true;
+		});
+	ScenePtr scene = Scene::create("메인화면", "Images/시작화면.png");
+	scene->setOnEnterCallback([](ScenePtr scene)->bool {
+		intro->play(true);
+		return true;
+		});
+	ScenePtr scene1 = Scene::create("모드선택", "Images/모드선택.png");
 	ScenePtr scene2 = Scene::create("스토리", "Images/p1.png");
 	stage5 = Scene::create("클래식", "Images/배경.png");
-
+	
 	ScenePtr mission1 = Scene::create("미션1", "Images/LV1_미션배경.png");
 	ScenePtr mission2 = Scene::create("미션1", "Images/LV2_미션배경.png");
 	ScenePtr mission3 = Scene::create("미션1", "Images/LV3_미션배경.png");
@@ -337,14 +345,23 @@ int main() {
 	timer3 = Timer::create(60.f);
 	timer4 = Timer::create(60.f);
 
+	auto button = Object::create("Images/빈화면.png", scene, 0, 0);
+	button->setOnMouseCallback([&](auto piece, auto x, auto y, auto action)->bool {
+		scene1->enter();
+		return true;
+		});
 	auto storyButton = Object::create("Images/스토리모드.png", scene1, 415, 200);
 	storyButton->setOnMouseCallback([&](auto piece, auto x, auto y, auto action)->bool {
 		scene2->enter();
+		intro->stop();
+		story->play(true);
 		return true;
 		});
 	auto classicButton = Object::create("Images/클래식 모드.png", scene1, 415, 50);
 	classicButton->setOnMouseCallback([&](auto piece, auto x, auto y, auto action)->bool {
 		stage5->enter();
+		intro->stop();
+		classic->play(true);
 		return true;
 		});
 
@@ -422,7 +439,7 @@ int main() {
 				}
 				else if (state == 1) {
 					a = game_index1(piece);
-					cout << a << endl;
+					//cout << a << endl;
 
 					if (mode == 0) { //지뢰 찾기
 						if (trap_hint[a % 10][a / 10] == -1) {
@@ -456,9 +473,9 @@ int main() {
 						}
 					}
 				}
-				cout << " flag trap" << flag << trap << endl;
+				//cout << " flag trap" << flag << trap << endl;
 				if (flag == trap) {
-					cout << "equal!" << flag << trap << endl;
+					//cout << "equal!" << flag << trap << endl;
 					int clear = 1;
 					for (int k = 0; k < 8; k++) {
 						for (int l = 0; l < 8; l++) {
@@ -477,19 +494,21 @@ int main() {
 					}
 				}
 
-				for (int k = 0; k < 4; k++) {
-					for (int l = 0; l < 4; l++) {
-						cout << click[l][k] << ' ';
-					}
-					cout << endl;
-				}
+				//for (int k = 0; k < 4; k++) {
+				//	for (int l = 0; l < 4; l++) {
+				//		cout << click[l][k] << ' ';
+				//	}
+				//	cout << endl;
+				//}
 
 				return true;
 				});
 		}
 	}
 
-	restartButton1 = Object::create("Images/restart.png", stage1, 115, 400);
+	//auto fail1 = Object::create("Images/실패화면.png", stage1, 0, 0);
+
+	restartButton1 = Object::create("Images/실패화면.png", stage1, 0, 0);
 	restartButton1->setOnMouseCallback([&](auto piece, auto x, auto y, auto action)->bool {
 		init();
 		random(4, 4, 2, trap_hint);
@@ -497,7 +516,8 @@ int main() {
 		state = 0;
 		timer1->stop();
 		timer1->set(60.f);
-
+		restartButton1->hide();
+		//fail1->hide();
 		for (int i = 0; i < 4; i++)
 			for (int j = 0; j < 4; j++)
 				trap1[i][j]->setImage("Images/한칸.png");
@@ -531,7 +551,6 @@ int main() {
 	trap_number2->setScale(.4f);
 	auto flag_number2 = Object::create("Images/지뢰숫자_0.png", stage2, 1155, 460);
 	flag_number2->setScale(.4f);
-
 	auto timerIMG2 = Object::create("Images/타이머.png", stage2, 585, 676);
 	timerIMG2->setScale(.12f);
 
@@ -563,7 +582,7 @@ int main() {
 				}
 				else if (state == 1) {
 					a = game_index2(piece);
-					cout << a << endl;
+					//cout << a << endl;
 
 					if (mode == 0) { //지뢰 찾기
 						if (trap_hint[a % 10][a / 10] == -1) {
@@ -597,9 +616,9 @@ int main() {
 						}
 					}
 				}
-				cout << " flag trap" << flag << trap << endl;
+				//cout << " flag trap" << flag << trap << endl;
 				if (flag == trap) {
-					cout << "equal!" << flag << trap << endl;
+					//cout << "equal!" << flag << trap << endl;
 					int clear = 1;
 					for (int k = 0; k < 6; k++) {
 						for (int l = 0; l < 6; l++) {
@@ -618,12 +637,12 @@ int main() {
 					}
 				}
 
-				for (int k = 0; k < 6; k++) {
+				/*for (int k = 0; k < 6; k++) {
 					for (int l = 0; l < 6; l++) {
 						cout << click[l][k] << ' ';
 					}
 					cout << endl;
-				}
+				}*/
 
 				return true;
 				});
@@ -703,7 +722,7 @@ int main() {
 				}
 				else if (state == 1) {
 					a = game_index3(piece);
-					cout << a << endl;
+					//cout << a << endl;
 
 					if (mode == 0) { //지뢰 찾기
 						if (trap_hint[a % 10][a / 10] == -1) {
@@ -737,9 +756,9 @@ int main() {
 						}
 					}
 				}
-				cout << " flag trap" << flag << trap << endl;
+				//cout << " flag trap" << flag << trap << endl;
 				if (flag == trap) {
-					cout << "equal!" << flag << trap << endl;
+					//cout << "equal!" << flag << trap << endl;
 					int clear = 1;
 					for (int k = 0; k < 8; k++) {
 						for (int l = 0; l < 8; l++) {
@@ -758,12 +777,12 @@ int main() {
 					}
 				}
 
-				for (int k = 0; k < 8; k++) {
+				/*for (int k = 0; k < 8; k++) {
 					for (int l = 0; l < 8; l++) {
 						cout << click[l][k] << ' ';
 					}
 					cout << endl;
-				}
+				}*/
 
 				return true;
 				});
@@ -843,7 +862,7 @@ int main() {
 				}
 				else if (state == 1) {
 					a = game_index4(piece);
-					cout << a << endl;
+					//cout << a << endl;
 
 					if (mode == 0) { //지뢰 찾기
 						if (trap_hint[a % 10][a / 10] == -1) {
@@ -877,9 +896,9 @@ int main() {
 						}
 					}
 				}
-				cout << " flag trap" << flag << trap << endl;
+				//cout << " flag trap" << flag << trap << endl;
 				if (flag == trap) {
-					cout << "equal!" << flag << trap << endl;
+					//cout << "equal!" << flag << trap << endl;
 					int clear = 1;
 					for (int k = 0; k < 8; k++) {
 						for (int l = 0; l < 8; l++) {
@@ -898,12 +917,12 @@ int main() {
 					}
 				}
 
-				for (int k = 0; k < 8; k++) {
+				/*for (int k = 0; k < 8; k++) {
 					for (int l = 0; l < 8; l++) {
 						cout << click[l][k] << ' ';
 					}
 					cout << endl;
-				}
+				}*/
 
 				return true;
 				});
@@ -935,7 +954,7 @@ int main() {
 		return true;
 		});
 
-	/***  stage 5  ***/
+	/*** 클래식 모드  ***/
 	//trap = 40;
 	stage5->setOnEnterCallback([](ScenePtr scene)->bool {
 		init();
@@ -943,17 +962,17 @@ int main() {
 		return true;
 		});
 
-	auto trapnum5 = Object::create("Images/지뢰개수.png", stage5, 1010, 550);
+	auto trapnum5 = Object::create("Images/클래식지뢰개수.png", stage5, 950, 550);
 	trapnum5->setScale(.5f);
-	auto flagnum5 = Object::create("Images/깃발개수.png", stage5, 1010, 450);
+	auto flagnum5 = Object::create("Images/클래식깃발개수.png", stage5, 950, 450);
 	flagnum5->setScale(.5f);
-	auto trap_number5 = Object::create("Images/지뢰숫자_9.png", stage5, 1155, 560);
+	auto trap_number5 = Object::create("Images/지뢰숫자_0.png", stage5, 1095, 460);
 	trap_number5->setScale(.4f);
-	auto flag_number5 = Object::create("Images/지뢰숫자_0.png", stage5, 1155, 460);
+	auto flag_number5 = Object::create("Images/지뢰숫자_0.png", stage5, 1170, 460);
 	flag_number5->setScale(.4f);
 
-	auto flagButton5 = Object::create("Images/깃발_초록.png", stage5, 1050, 200);
-	auto trapButton5 = Object::create("Images/지뢰누름.png", stage5, 1050, 50);
+	auto flagButton5 = Object::create("Images/깃발_초록.png", stage5, 1000, 200);
+	auto trapButton5 = Object::create("Images/지뢰누름.png", stage5, 1000, 50);
 	flagButton5->setOnMouseCallback([&](auto piece, auto x, auto y, auto action)->bool {
 		piece->setImage("Images/깃발누름.png");
 		trapButton5->setImage("Images/지뢰.png");
@@ -969,8 +988,8 @@ int main() {
 
 	for (int i = 0; i < 16; i++) {
 		for (int j = 0; j < 16; j++) {
-			trap5[i][j] = Object::create("Images/한칸.png", stage5, index_to_x(i), index_to_y(j)); //i+2, i+3 으로 6*6 4*4
-			trap5[i][j]->setScale(.6f);
+			trap5[i][j] = Object::create("Images/한칸.png", stage5, 200 + 42 * i, 660 - 42 * j); //i+2, i+3 으로 6*6 4*4
+			trap5[i][j]->setScale(.3f);
 			trap5[i][j]->setOnMouseCallback([&](auto piece, auto x, auto y, auto action)->bool {
 				trap = 40;
 				if (state == 0) {
@@ -979,10 +998,10 @@ int main() {
 				}
 				else if (state == 1) {
 					a = game_index5(piece);
-					cout << a << endl;
+					//cout << a << endl;
 
 					if (mode == 0) { //지뢰 찾기
-						if (trap_hint[a % 10][a / 10] == -1) {
+						if (trap_hint[a % 100][a / 100] == -1) {
 							for (int k = 0; k < 16; k++)
 								for (int l = 0; l < 16; l++)
 									if (trap_hint[k][l] == -1)
@@ -993,28 +1012,32 @@ int main() {
 							restartButton5->show();
 						}
 						else
-							show5(a / 10, a % 10, 16, 16);
+							show5(a / 100, a % 100, 16, 16);
 					}
 					else { //깃발 꼽기
-						if (click[a / 10][a % 10] == 2) {
-							click[a / 10][a % 10] = 0;
+						if (click[a / 100][a % 100] == 2) {
+							click[a / 100][a % 100] = 0;
 							piece->setImage("Images/한칸.png");
 							flag--;
-							sprintf(path, "Images/지뢰숫자_%d.png", flag);
+							sprintf(path, "Images/지뢰숫자_%d.png", flag / 10);
+							trap_number5->setImage(path);
+							sprintf(path, "Images/지뢰숫자_%d.png", flag % 10);
 							flag_number5->setImage(path);
 						}
 						else {
-							click[a / 10][a % 10] = 2;
+							click[a / 100][a % 100] = 2;
 							piece->setImage("Images/깃발_초록.png");
 							flag++;
-							sprintf(path, "Images/지뢰숫자_%d.png", flag);
+							sprintf(path, "Images/지뢰숫자_%d.png", flag / 10);
+							trap_number5->setImage(path);
+							sprintf(path, "Images/지뢰숫자_%d.png", flag % 10);
 							flag_number5->setImage(path);
 						}
 					}
 				}
-				cout << " flag trap" << flag << trap << endl;
+				//cout << " flag trap" << flag << trap << endl;
 				if (flag == trap) {
-					cout << "equal!" << flag << trap << endl;
+					//cout << "equal!" << flag << trap << endl;
 					int clear = 1;
 					for (int k = 0; k < 16; k++) {
 						for (int l = 0; l < 16; l++) {
@@ -1031,19 +1054,19 @@ int main() {
 					}
 				}
 
-				for (int k = 0; k < 16; k++) {
+				/*for (int k = 0; k < 16; k++) {
 					for (int l = 0; l < 16; l++) {
 						cout << click[l][k] << ' ';
 					}
 					cout << endl;
-				}
+				}*/
 
 				return true;
 				});
 		}
 	}
 
-	restartButton5 = Object::create("Images/restart.png", stage4, 115, 400);
+	restartButton5 = Object::create("Images/restart.png", stage5, 1030, 365);
 	restartButton5->setOnMouseCallback([&](auto piece, auto x, auto y, auto action)->bool {
 		init();
 		random(16, 16, 40, trap_hint);
@@ -1058,8 +1081,7 @@ int main() {
 		});
 	restartButton5->hide();
 
-    startGame(scene1);
-
+    startGame(scene);
 
 	return 0;
 }
