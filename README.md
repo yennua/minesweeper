@@ -26,8 +26,6 @@ group 11 :: 공예나, 최진혁
 
 신병의 목숨을 걸고 진행되는 조기전역을 향한 여정!
 
-~~죽으면 전역 못하니까 꼭 살아야 한다 
-
 지금 시작합니다!!
 
 ## 게임 설명
@@ -62,7 +60,7 @@ group 11 :: 공예나, 최진혁
 
 과연 우리의 주인공은! 모든 지뢰를 찾아내고 안전하게 조기전역을 성공할 수 있을까요!
 
-<img width="640" alt="엔딩화면" src="https://https://user-images.githubusercontent.com/67888680/144752298-86bca26a-10cb-4a81-bf8d-5178490eccc9.png">
+<img width="640" ![엔딩화면](https://user-images.githubusercontent.com/67888680/144752372-2356ec63-5a5b-406f-91e9-687e3457ca9a.png)cc9.png">
 
 
 아니면 지뢰가 터져서 모두를 위험에 빠트리게 될까요!
