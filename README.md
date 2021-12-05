@@ -55,20 +55,24 @@ group 11 :: 공예나, 최진혁
 
 **이등병**
 
-<img width="640" alt="LV1_미션배경" src="https://user-images.githubusercontent.com/67888680/144751827-f8d129b0-8676-4e9e-ae5d-ff93036a0ef4.png">
+<img width="640" alt="LV1_미션배경" src="https://user-images.githubusercontent.com/67888680/144751827-f8d129b0-8676-4e9e-ae5d-ff93036a0ef4.png">   
+<img width="640" alt="1" src="https://user-images.githubusercontent.com/67888680/144752960-98b708f8-2e98-422e-807a-411519d40d70.png">
 
 **일병**
 
-<img width="640" alt="LV2_미션배경" src="https://user-images.githubusercontent.com/67888680/144751850-d01994ba-6c8d-40bd-bfea-7744c5914026.png">
+<img width="640" alt="LV2_미션배경" src="https://user-images.githubusercontent.com/67888680/144751850-d01994ba-6c8d-40bd-bfea-7744c5914026.png">   
+<img width="640" alt="2" src="https://user-images.githubusercontent.com/67888680/144752962-0cd49659-ae51-438c-8964-41e78a098d52.png">
 
 **상병**
 
-<img width="640" alt="LV3_미션배경" src="https://user-images.githubusercontent.com/67888680/144751858-41240856-dc4e-4211-af50-0bb9b949a420.png">
+<img width="640" alt="LV3_미션배경" src="https://user-images.githubusercontent.com/67888680/144751858-41240856-dc4e-4211-af50-0bb9b949a420.png">   
+<img width="640" alt="3" src="https://user-images.githubusercontent.com/67888680/144752965-cb5fbfd7-a2e6-4054-994f-545d96271490.png">
 
 **병장**
 
-<img width="640" alt="LV4_미션배경" src="https://user-images.githubusercontent.com/67888680/144751868-520f4f66-3fd5-4be2-9d4c-cf19779b2b9a.png">
-
+<img width="640" alt="LV4_미션배경" src="https://user-images.githubusercontent.com/67888680/144751868-520f4f66-3fd5-4be2-9d4c-cf19779b2b9a.png">   
+<img width="640" alt="4" src="https://user-images.githubusercontent.com/67888680/144752966-14dbfafb-f2a6-4520-afb9-f0a2cf1438b5.png">
+   
 과연 우리의 주인공은! 모든 지뢰를 찾아내고 안전하게 조기전역을 성공할 수 있을까요!
 
 <img width="640" alt="엔딩화면" src="https://user-images.githubusercontent.com/67888680/144752372-2356ec63-5a5b-406f-91e9-687e3457ca9a.png">
