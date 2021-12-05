@@ -31,7 +31,7 @@ group 11 :: 공예나, 최진혁
 ## 게임 설명
 ---------
 
-#####튜토리얼
+###튜토리얼
 <img width="640" alt="p8" src="https://user-images.githubusercontent.com/67888680/144751753-e96343d8-dded-417b-87e0-ff21fc44cf75.png">
 
 클릭만으로 진행할 수 있는 간단한 게임!
