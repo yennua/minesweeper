@@ -506,7 +506,6 @@ int main() {
 		}
 	}
 
-	//auto fail1 = Object::create("Images/실패화면.png", stage1, 0, 0);
 
 	restartButton1 = Object::create("Images/실패화면.png", stage1, 0, 0);
 	restartButton1->setOnMouseCallback([&](auto piece, auto x, auto y, auto action)->bool {
@@ -517,7 +516,6 @@ int main() {
 		timer1->stop();
 		timer1->set(60.f);
 		restartButton1->hide();
-		//fail1->hide();
 		for (int i = 0; i < 4; i++)
 			for (int j = 0; j < 4; j++)
 				trap1[i][j]->setImage("Images/한칸.png");
@@ -649,7 +647,7 @@ int main() {
 		}
 	}
 
-	restartButton2 = Object::create("Images/restart.png", stage2, 115, 400);
+	restartButton2 = Object::create("Images/실패화면.png", stage2, 0, 0);
 	restartButton2->setOnMouseCallback([&](auto piece, auto x, auto y, auto action)->bool {
 		init();
 		random(6, 6, 4, trap_hint);
@@ -657,7 +655,7 @@ int main() {
 		state = 0;
 		timer2->stop();
 		timer2->set(60.f);
-
+		restartButton2->hide();
 		for (int i = 0; i < 6; i++)
 			for (int j = 0; j < 6; j++)
 				trap2[i][j]->setImage("Images/한칸.png");
@@ -789,7 +787,7 @@ int main() {
 		}
 	}
 
-	restartButton3 = Object::create("Images/restart.png", stage3, 115, 400);
+	restartButton3 = Object::create("Images/실패화면.png", stage3, 0, 0);
 	restartButton3->setOnMouseCallback([&](auto piece, auto x, auto y, auto action)->bool {
 		init();
 		random(8, 8, 7, trap_hint);
@@ -797,7 +795,7 @@ int main() {
 		state = 0;
 		timer3->stop();
 		timer3->set(60.f);
-
+		restartButton3->hide();
 		for (int i = 0; i < 8; i++)
 			for (int j = 0; j < 8; j++)
 				trap3[i][j]->setImage("Images/한칸.png");
@@ -929,7 +927,7 @@ int main() {
 		}
 	}
 
-	restartButton4 = Object::create("Images/restart.png", stage4, 115, 400);
+	restartButton4 = Object::create("Images/실패화면.png", stage4, 0, 0);
 	restartButton4->setOnMouseCallback([&](auto piece, auto x, auto y, auto action)->bool {
 		init();
 		random(8, 8, 9, trap_hint);
@@ -937,7 +935,7 @@ int main() {
 		state = 0;
 		timer4->stop();
 		timer4->set(60.f);
-
+		restartButton4->hide();
 		for (int i = 0; i < 8; i++)
 			for (int j = 0; j < 8; j++)
 				trap4[i][j]->setImage("Images/한칸.png");
@@ -1066,13 +1064,13 @@ int main() {
 		}
 	}
 
-	restartButton5 = Object::create("Images/restart.png", stage5, 1030, 365);
+	restartButton5 = Object::create("Images/실패화면.png", stage5, 0, 0);
 	restartButton5->setOnMouseCallback([&](auto piece, auto x, auto y, auto action)->bool {
 		init();
 		random(16, 16, 40, trap_hint);
 		flag = 0;
 		state = 0;
-
+		restartButton5->hide();
 		for (int i = 0; i < 16; i++)
 			for (int j = 0; j < 16; j++)
 				trap5[i][j]->setImage("Images/한칸.png");
