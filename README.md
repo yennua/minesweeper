@@ -3,6 +3,11 @@
 
 2021 객체지향프로그래밍 그룹과제 _ 지뢰찾기 게임
 
+Warning! X86으로 변경 부탁드려요!
+
+![image](https://user-images.githubusercontent.com/67888680/144825559-09d68f7e-47dd-4dcd-9f9e-ae8c61a39a33.png)
+
+
 
 ## 1. 기본정보
 --------
@@ -17,7 +22,9 @@ group 11 :: 공예나, 최진혁
 
 게임의 진행 과정을 보고 싶다면 Click!
 
-게임 플레이 영상 :: 
+게임 플레이 영상 :: https://youtu.be/a1uBMA3BYNg
+
+※게임 소리를 조절해주세요
 
 ## 2. 게임 소개
 ---------
@@ -91,3 +98,11 @@ group 11 :: 공예나, 최진혁
 지금 바로 PLAY.
 
 <img width="640" alt="시작화면" src="https://user-images.githubusercontent.com/67888680/144752462-f8423eb0-c8aa-4cf4-adda-aab7f697f179.png">
+
+--------
+
+스토리 모드를 모두 클리어한 당신....
+
+![image](https://user-images.githubusercontent.com/67888680/144825700-edd5679a-38d9-4949-8ad5-f5d7f3287caf.png)
+
+클래식 모드에서는 어떨까...?
